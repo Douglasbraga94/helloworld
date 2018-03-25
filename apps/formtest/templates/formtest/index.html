@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<title>HelloWorld</title>
+</head>
+
+
+<body>
+	<h1>Hello World!</h1>
+	<p>What's your name?</p>
+	<form class="  action="{url 'index'}" method="post">
+		{% csrf_token %}
+		{{form}}
+		<input type="submit" id="nome" value="Say 'Hello'" name="">
+	</form>
+	<p>Hello World '{{ text }}'</p>
+	<div class="rating"><p>Rate this greeting
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></p>
+</div>
+
+</body>
+</html>
